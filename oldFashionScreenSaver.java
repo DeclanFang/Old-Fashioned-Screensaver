@@ -28,14 +28,14 @@ public class oldFashionScreenSaver extends JFrame {
 
     void launchFrame(){
         setSize(800, 600);
-        setLocation(100, 100);   //top left corner's location
+        setLocation(100, 100);   //location of top left corner of the window
         setVisible(true);
 
         //keep drawing the images
         while(true) {
             repaint();
             try{
-                Thread.sleep(30);    //40ms
+                Thread.sleep(30);
             } catch(Exception e) {
                 e.printStackTrace();
             }
