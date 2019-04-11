@@ -1,6 +1,11 @@
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Screensaver version 2.0
+ * @author Declan
+ */
+
 public class oldFashionScreenSaver extends JFrame {
 
     Image dvd = Toolkit.getDefaultToolkit().getImage("images/dvd.png");
@@ -28,14 +33,14 @@ public class oldFashionScreenSaver extends JFrame {
 
     void launchFrame(){
         setSize(800, 600);
-        setLocation(100, 100);   //location of top left corner of the window
+        setLocation(100, 100);   //top left corner's location
         setVisible(true);
 
         //keep drawing the images
         while(true) {
             repaint();
             try{
-                Thread.sleep(30);
+                Thread.sleep(30);    //40ms
             } catch(Exception e) {
                 e.printStackTrace();
             }
